@@ -41,10 +41,12 @@
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
             android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_marginBottom="3dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
             android:paddingVertical="@dimen/menu_buttons_padding_v"
+
             />
 
         <Button
@@ -54,6 +56,7 @@
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
             android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:layout_marginBottom="3dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
@@ -67,6 +70,7 @@
             android:background="@drawable/second_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
             android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_marginBottom="3dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
@@ -80,6 +84,7 @@
             android:background="@drawable/second_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
             android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:layout_marginBottom="3dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
@@ -93,6 +98,7 @@
             android:background="@drawable/third_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
             android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_marginBottom="3dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
@@ -106,6 +112,7 @@
             android:background="@drawable/third_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
             android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:layout_marginBottom="3dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
