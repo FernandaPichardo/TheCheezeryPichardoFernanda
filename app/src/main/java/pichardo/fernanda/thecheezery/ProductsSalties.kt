@@ -1,38 +1,39 @@
 package pichardo.fernanda.thecheezery
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.BaseAdapter
+import android.widget.ImageView
+import android.widget.ListView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
-class ProductsActivity : AppCompatActivity() {
+class ProductsSalties:AppCompatActivity() {
 
-    var coldDrinks = ArrayList<Product>()
+    var salties = ArrayList<Product>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_products)
+        setContentView(R.layout.products_salties)
 
         addProducts()
-        var listView: ListView = findViewById(R.id.listView) as ListView
-        var adapter: adapterProducts = adapterProducts(this, coldDrinks)
-        listView.adapter = adapter
+        var listView4: ListView = findViewById(R.id.listView4) as ListView
+        var adapter4: adapterProducts = adapterProducts(this, salties)
+        listView4.adapter = adapter4
     }
 
     fun addProducts(){
-        coldDrinks.add(Product("Caramel Frap", R.drawable.caramelfrap, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top.", 6.0))
-        coldDrinks.add(Product("Chocolate Frap", R.drawable.chocolatefrap, "Rich mocha-flavored sauce meets up with chocolate chips, milk and ice for a blender bash.", 5.00))
-        coldDrinks.add(Product("Cold Brew", R.drawable.coldbrew, "Is created by steeping medium-to-coarse ground coffee in room temperature water for 12 hours or longer.", 3.00))
-        coldDrinks.add(Product("Matcha Latte", R.drawable.matcha, "Leafy teste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go.", 4.00))
-        coldDrinks.add(Product("Oreo Milkshake", R.drawable.oreomilkshake, "Chocolate ice cream and oreo cookies topped with whipped cream with cocoa and chocolate syrup.", 7.00))
-        coldDrinks.add(Product("Peanut Milkshake", R.drawable.peanutmilkshake, "Vanilla ice cream, mixed with peanut butter and chocolate.", 7.00))
-
+        salties.add(Product("Chicken crepes", R.drawable.chickencrepes, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
+        salties.add(Product("Club Sandwich", R.drawable.clubsandwich, "A delicious sandwich served with french fries.", 5.0))
+        salties.add(Product("Panini", R.drawable.hampanini, "Sandwich made with Italian bread  served warmed by grilling.", 4.0))
+        salties.add(Product("Philly cheese steak", R.drawable. phillycheesesteak, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6.0))
+        salties.add(Product("Nachos", R.drawable. nachos, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
     }
 
-    private class adapterProducts: BaseAdapter{
+    private class adapterProducts: BaseAdapter {
         var products = ArrayList<Product>()
         var context: Context? = null
 
@@ -71,4 +72,5 @@ class ProductsActivity : AppCompatActivity() {
             return vista
         }
     }
+
 }

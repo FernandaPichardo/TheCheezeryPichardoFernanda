@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/drawable/first_gradient.xml" value="0.3635" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/drawable/round_button.xml" value="0.3515" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/drawable/second_gradient.xml" value="0.3635" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/drawable/third_gradient.xml" value="0.22" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/layout/activity_hots.xml" value="0.3625" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/layout/activity_menu.xml" value="0.3625" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/layout/activity_products.xml" value="0.3625" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/layout/activity_register.xml" value="0.3625" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/layout/hotdrinks_activity.xml" value="0.3625" />
-        <entry key="..\:/Users/Fer/AndroidStudioProjects/TheCheezery/app/src/main/res/layout/product_view.xml" value="0.3625" />
-      </map>
-    </option>
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

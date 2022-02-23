@@ -16,26 +16,24 @@ class MenuActivity : AppCompatActivity() {
         var buttonSweets: Button = findViewById(button_sweets) as Button
         var buttonSalties: Button = findViewById(button_salties) as Button
 
-
         buttonCold.setOnClickListener {
             var intent: Intent = Intent(this, ProductsActivity::class.java)
             startActivity(intent)
         }
 
         buttonHot.setOnClickListener {
-            var intent1: Intent = Intent(this, ProductsActivity::class.java)
-            startActivity(intent1)
+            var intentoHD: Intent = Intent(this, ProductsHot::class.java)
+            startActivity(intentoHD)
         }
 
         buttonSweets.setOnClickListener {
-            var intent2: Intent = Intent(this, ProductsActivity::class.java)
-            startActivity(intent2)
+            var intentoS: Intent = Intent(this, ProductsSweets::class.java)
+            startActivity(intentoS)
         }
 
         buttonSalties.setOnClickListener {
-            var intent3: Intent = Intent(this, ProductsActivity::class.java)
-            startActivity(intent3)
+            var intentoSa: Intent = Intent(this, ProductsSalties::class.java)
+            startActivity(intentoSa)
         }
-
     }
 }

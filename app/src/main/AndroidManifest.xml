@@ -13,6 +13,15 @@
             android:name=".ProductsActivity"
             android:exported="false" />
         <activity
+            android:name=".ProductsHot"
+            android:exported="false" />
+        <activity
+            android:name=".ProductsSalties"
+            android:exported="false" />
+        <activity
+            android:name=".ProductsSweets"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity

@@ -8,31 +8,30 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 
-class ProductsActivity : AppCompatActivity() {
+class ProductsHot : AppCompatActivity() {
 
-    var coldDrinks = ArrayList<Product>()
+    var hotDrinks = ArrayList<Product>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_products)
+        setContentView(R.layout.products_hot)
 
         addProducts()
-        var listView: ListView = findViewById(R.id.listView) as ListView
-        var adapter: adapterProducts = adapterProducts(this, coldDrinks)
-        listView.adapter = adapter
+        var listView2: ListView = findViewById(R.id.listView2) as ListView
+        var adapter2: adapterProducts = adapterProducts(this, hotDrinks)
+        listView2.adapter = adapter2
     }
 
     fun addProducts(){
-        coldDrinks.add(Product("Caramel Frap", R.drawable.caramelfrap, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top.", 6.0))
-        coldDrinks.add(Product("Chocolate Frap", R.drawable.chocolatefrap, "Rich mocha-flavored sauce meets up with chocolate chips, milk and ice for a blender bash.", 5.00))
-        coldDrinks.add(Product("Cold Brew", R.drawable.coldbrew, "Is created by steeping medium-to-coarse ground coffee in room temperature water for 12 hours or longer.", 3.00))
-        coldDrinks.add(Product("Matcha Latte", R.drawable.matcha, "Leafy teste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go.", 4.00))
-        coldDrinks.add(Product("Oreo Milkshake", R.drawable.oreomilkshake, "Chocolate ice cream and oreo cookies topped with whipped cream with cocoa and chocolate syrup.", 7.00))
-        coldDrinks.add(Product("Peanut Milkshake", R.drawable.peanutmilkshake, "Vanilla ice cream, mixed with peanut butter and chocolate.", 7.00))
-
+        hotDrinks.add(Product("Latte", R.drawable.latte, "Coffee drink made with espresso and steamed milk", 6.0))
+        hotDrinks.add(Product("Hot chocolate", R.drawable.hotchocolate, "Heated drink consisting of shaved chocolate, topped with marshmallows.", 5.0))
+        hotDrinks.add(Product("Espresso", R.drawable.espresso, "Full-flavored, concentrated form of coffee.", 4.0))
+        hotDrinks.add(Product("Chai Latte", R.drawable.chailatte, "Spiced tea concentrate with milk", 6.0))
+        hotDrinks.add(Product("Capuccino", R.drawable.capuccino, "A cappuccino is an espresso-based coffee drink, prepared with steamed foam.", 7.0))
+        hotDrinks.add(Product("American coffee", R.drawable.americano, "Espresso with hot water", 2.0))
     }
 
-    private class adapterProducts: BaseAdapter{
+    private class adapterProducts: BaseAdapter {
         var products = ArrayList<Product>()
         var context: Context? = null
 
